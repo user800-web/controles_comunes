@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/lblCiudadDos"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/lblCiudad2"
+        android:labelFor="@id/txtNumID"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblGeneroDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/lblGnero2"
+        android:labelFor="@id/txtNumID"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblCorreoDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblGeneroDos"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/lblCorreo2"
+        android:labelFor="@id/txtNumID"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="13dp"
+        android:onClick="btnRegresar"
+        android:text="Regresar" />
+
+    <TextView
+        android:id="@+id/lblTelefono2"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblCorreo2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:labelFor="@id/txtTelefono"
+        android:text="Teléfono:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblCorreo2"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblGnero2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="63dp"
+        android:labelFor="@id/txtCorreo"
+        android:text="Correo:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblGnero2"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblCiudad2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="67dp"
+        android:text="Género:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblCiudad2"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblFechaNac2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="41dp"
+        android:text="Ciudad:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblFechaNac2"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/lblnombres2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="38dp"
+        android:labelFor="@id/txtFechaNac"
+        android:text="Fecha de nacimiento:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblnombres2"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lblNumId2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="61dp"
+        android:text="Nombres:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblNumIdDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/lblNumId2"
+        android:labelFor="@id/txtNumID"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblTelefDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/lblTelefono2"
+        android:labelFor="@id/txtNumID"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblNumId2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="96dp"
+        android:labelFor="@id/txtNumID"
+        android:text="Número de ID:"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblnombresDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/lblnombres2"
+        android:labelFor="@id/txtNumID"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblFechaDos"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="39dp"
+        android:layout_toEndOf="@+id/lblFechaNac2"
+        android:labelFor="@id/txtNumID"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lblDatos"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="152dp"
+        android:text="Datos"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="13dp" />
+</RelativeLayout>
