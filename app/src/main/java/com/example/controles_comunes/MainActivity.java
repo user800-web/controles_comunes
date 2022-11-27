@@ -7,20 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 
 public class MainActivity extends AppCompatActivity {
     private EditText txtNumID;
     private EditText txtNombres;
     private EditText txtFechaNac;
     private EditText txtCiud;
-    private CheckBox seleccion;
+    private RadioGroup grupo;
     private EditText txtCorreo;
     private EditText txtTelefono;
+    String genero = "Masculino" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        grupo = (RadioGroup) findViewById(R.id.radioGSexo);
     }
     public void btnEnviar(View view){
         //Obtener datos de la actividad
@@ -28,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
         txtNombres = (EditText) findViewById(R.id.txtNombres);
         txtFechaNac = (EditText) findViewById(R.id.txtFechaNac);
         txtCiud = (EditText) findViewById(R.id.txtCiud);
-        //obtener checkbox seleccionado
-        String genero = "Masculino";
-        seleccion = (CheckBox) findViewById(R.id.chechFem);
-        if(seleccion.isSelected()){
-            genero= "Femenino";
+        //obtener radioGroup seleccionado
+
+        if (grupo.getCheckedRadioButtonId() == R.id.radioM) {
+            genero = "Masculino";
+        } else {
+            genero = "Femenino";
         }
 
         txtCorreo = (EditText) findViewById(R.id.txtCorreo);

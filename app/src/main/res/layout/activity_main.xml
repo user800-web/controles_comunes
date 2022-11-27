@@ -40,9 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/txtCorreo"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="38dp"
         android:layout_toEndOf="@+id/lblTelefono"
         android:ems="10"
         android:inputType="number"
@@ -162,31 +162,26 @@
         android:minHeight="48dp"
         android:textSize="14sp" />
 
-    <CheckBox
-        android:id="@+id/chechFem"
-        android:layout_width="198dp"
+    <RadioGroup
+        android:id="@+id/radioGSexo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtFechaNac"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="73dp"
-        android:layout_marginEnd="42dp"
-        android:layout_toEndOf="@+id/lblGnero"
-        android:text="Femenino"
-        android:textSize="14sp" />
+        android:layout_below="@+id/txtCiud"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/lblGnero">
 
-    <CheckBox
-        android:id="@+id/checkMas"
-        android:layout_width="149dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/chechFem"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="39dp"
-        android:layout_toEndOf="@+id/lblGnero"
-        android:text="Masculino"
-        android:textSize="14sp" />
+        <RadioButton
+            android:id="@+id/radioM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+        <RadioButton
+            android:id="@+id/radioF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Femenino" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/lblGnero"
@@ -217,11 +212,11 @@
         android:id="@+id/txtCorreo"
         android:layout_width="234dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/checkMas"
+        android:layout_alignTop="@+id/radioGSexo"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="59dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="37dp"
         android:layout_toEndOf="@+id/lblCorreo"
         android:ems="10"
         android:inputType="textEmailAddress"
